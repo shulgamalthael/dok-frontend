@@ -9,12 +9,3 @@ services:
       - NODE_ENV=production
     ports:
       - "3000:3000"
-
-  nginx:
-    image: nginx:stable
-    container_name: infinity-nginx
-    restart: always
-    ports:
-      - "80:80"
-    depends_on:
-      - frontend
