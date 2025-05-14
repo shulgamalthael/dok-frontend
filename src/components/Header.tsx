@@ -51,12 +51,12 @@ const Header = () => {
                             <Image src="/logo-full-original-ua.svg" alt="Logo" height={48} width={144} />
                         </Link>
                     </div>
-                    <div className="flex bg-[#1a77d2] h-[48px] relative w-[125px] rounded-[8px] my-auto mx-4 cursor-pointer">
+                    <Link href="/catalog" className="flex bg-[#1a77d2] h-[48px] relative w-[125px] rounded-[8px] my-auto mx-4">
                         <div className="bg-[url(/icons/ic-catalog.svg)] bg-center bg-size-[24px] bg-no-repeat h-[48px] w-[48px]"></div>
                         <div className="text-white text-[16px] leading-[48px]">
-                            <Link href="/catalog">Каталог</Link>
+                            Каталог
                         </div>
-                    </div>
+                    </Link>
                     <div className="flex flex-col grow-[20] shrink-[2] max-w-[calc(100vw-332px)] my-auto">
                         <div className="flex w-full rounded-[8px] hover:shadow-[0_1px_3px_0_rgba(5,23,42,0.3),_0_4px_8px_3px_rgba(5,23,42,0.15)]">
                             <input className="h-[48px] w-full text-black placeholder:text-stone-400 border-r-[0] border border-solid border-[rgba(0,0,0,0.12)] gap-[8] text-13px pt-[12px] pr-[4px] pb-[12px] pl-[16px] rounded-tl-[8px] rounded-bl-[8px] cursor-pointer" placeholder="Яку запчастину шукаєте?" />
