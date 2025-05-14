@@ -30,7 +30,7 @@ services:
       - ./data/certbot/conf:/etc/letsencrypt
     entrypoint: >
       sh -c "certbot certonly --webroot --webroot-path=/var/www/certbot 
-      --email your@email.com --agree-tos --no-eff-email 
+      --email nikita.shulha.dok@gmail.com --agree-tos --no-eff-email 
       -d infinity-suit.online -d www.infinity-suit.online"
 
   certbot-renew:
