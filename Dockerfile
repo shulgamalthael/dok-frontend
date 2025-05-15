@@ -1,5 +1,3 @@
-# frontend/Dockerfile
-
 # Этап сборки
 FROM node:18-alpine AS builder
 WORKDIR /app
@@ -17,6 +15,9 @@ FROM node:18-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
+
+# 👉 Добавим ca-certificates
+RUN apk add --no-cache ca-certificates
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
