@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import Image from "next/image";
 
 const Header = () => {
     const t = useTranslations('common');
@@ -47,7 +48,7 @@ const Header = () => {
                 <div className="flex max-w-[1600px] w-[1600px] h-[100px] mx-auto px-[62px]">
                     <div className="flex p-4">
                         <Link href="/" className="m-auto">
-                            <img src="/logo-full-original-ua.svg" alt="Logo" className="h-[48px] w-[144px]" />
+                            <Image src="/logo-full-original-ua.svg" alt="Logo" height={48} width={144} />
                         </Link>
                     </div>
                     <div className="flex bg-[#1a77d2] h-[48px] relative w-[125px] rounded-[8px] my-auto mx-4">

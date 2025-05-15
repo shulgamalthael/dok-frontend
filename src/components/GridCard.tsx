@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export interface ICard {
     id: number;
@@ -9,7 +10,7 @@ const GridCard = () => {
         <div className="flex group flex-col justify-between px-[22px] pt-[22px] hover:shadow-[0_0_30px_0_rgba(0,0,0,0.28)]">
             <div className="relative">
                 <Link href="/" className="flex h-[220px] w-full overflow-hidden whitespace-nowrap mb-[29px] pt-[10px] text-center relative">
-                    <img src="https://img.dok.ua/images/tile/group/motornoe-maslo-ford-motorcraft-a5-5w-30-sinteticheskoe_774.jpg" alt="Product" className="object-contain h-full w-full" />
+                    <Image src="https://img.dok.ua/images/tile/group/motornoe-maslo-ford-motorcraft-a5-5w-30-sinteticheskoe_774.jpg" alt="Product" objectFit="contain" layout="fill" />
                 </Link>
                 <span className="favorite-heart favorite-heart_empty z-[2] h-[40px] w-[40px] flex text-[24px] leading-[40px] items-center font-normal mr-[2px] text-center rounded-full bg-[#f5f5f5] cursor-pointer hover:bg-stone-900 hover:shadow-[0_1px_2px_0_rgba(5,23,42,0.3),_0_1px_3px_1px_rgba(5,23,42,0.15)]"></span>
             </div>

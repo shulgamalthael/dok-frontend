@@ -47,7 +47,7 @@ const LanguageSwitcher = () => {
                             onClick={() => changeLanguage(lang.code)}
                             className="flex items-center gap-2 px-4 py-2 w-full hover:bg-gray-100"
                         >
-                            <img src={lang.flag} alt={lang.name} className="h-[20px] w-[20px]" />
+                            <Image src={lang.flag} alt={lang.name} height={20} width={20} />
                             <span>{lang.name}</span>
                         </button>
                     ))}

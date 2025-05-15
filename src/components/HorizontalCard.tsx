@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const HorizontalCard = () => {
     return(
@@ -6,7 +7,7 @@ const HorizontalCard = () => {
             <div className="w-[75%] relative flex">
                 <div className="flex-[0_0_40.54%] h-[248px] mb-[35px] pt-[10px] w-full relative">
                     <Link href="/" className="flex m-auto relative max-w-[230px] h-full">
-                        <img src="https://img.dok.ua/images/tile/group/motornoe-maslo-ford-motorcraft-a5-5w-30-sinteticheskoe_774.jpg" alt="Product" className="object-contain h-full w-full" />
+                        <Image src="https://img.dok.ua/images/tile/group/motornoe-maslo-ford-motorcraft-a5-5w-30-sinteticheskoe_774.jpg" alt="Product" objectFit="contain" layout="fill" />
                         <span className="favorite-heart favorite-heart_empty z-[2] h-[40px] w-[40px] flex text-[24px] leading-[40px] items-center font-normal mr-[2px] text-center rounded-full bg-[#f5f5f5] cursor-pointer hover:bg-stone-900 hover:shadow-[0_1px_2px_0_rgba(5,23,42,0.3),_0_1px_3px_1px_rgba(5,23,42,0.15)]"></span>
                     </Link>
                 </div>

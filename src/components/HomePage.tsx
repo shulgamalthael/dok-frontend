@@ -2,6 +2,7 @@ import {Suspense} from "react";
 import Link from "next/link";
 import GridCardsList from "@/components/GridCardsList";
 import GridSkeletonCardsList from "@/components/GridSkeletonCardsList";
+import Image from "next/image";
 
 const HomePage = () => {
     return(
@@ -56,10 +57,14 @@ const HomePage = () => {
                                     <div className="p-[9px_30px_8px_20px]">По рейтингу</div>
                                 </div>
                                 <div className="flex h-[40px] w-[40px] text-center cursor-pointer">
-                                    <img src="/icons/groupsIcon.svg" alt="groupsIcon.svg" className={`max-h-full max-w-full h-auto m-auto border-0 filter-[invert(46%)_sepia(8%)_saturate(37%)_hue-rotate(316deg)_brightness(97%)_contrast(82%)] hover:filter-[brightness(80%)_saturate(0)]`} />
+                                    <div className={`max-h-full max-w-full h-auto m-auto border-0 filter-[invert(46%)_sepia(8%)_saturate(37%)_hue-rotate(316deg)_brightness(97%)_contrast(82%)] hover:filter-[brightness(80%)_saturate(0)]`}>
+                                        <Image src="/icons/groupsIcon.svg" alt="groupsIcon.svg" objectFit="contain" layout="fill" />
+                                    </div>
                                 </div>
                                 <div className="flex h-[40px] w-[40px] text-center cursor-pointer">
-                                    <img src="/icons/tilesIcon.svg" alt="tilesIcon.svg" className={`max-h-full max-w-full h-auto m-auto border-0 hover:filter-[brightness(80%)_saturate(0)]`}/>
+                                    <div className={`max-h-full max-w-full h-auto m-auto border-0 hover:filter-[brightness(80%)_saturate(0)]`}>
+                                        <Image src="/icons/tilesIcon.svg" alt="tilesIcon.svg" objectFit="contain" layout="fill" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
