@@ -51,7 +51,7 @@ const Header = () => {
                             <Image src="/logo-full-original-ua.svg" alt="Logo" height={48} width={144} />
                         </Link>
                     </div>
-                    <div href="/catalog" className="flex bg-[#1a77d2] h-[48px] relative w-[125px] rounded-[8px] my-auto mx-4">
+                    <div className="flex bg-[#1a77d2] h-[48px] relative w-[125px] rounded-[8px] my-auto mx-4">
                         <Link href="/catalog" className="flex relative h-full w-full">
                             <div className="bg-[url(/icons/ic-catalog.svg)] bg-center bg-size-[24px] bg-no-repeat h-[48px] w-[48px]"></div>
                             <div className="text-white text-[16px] leading-[48px]">
