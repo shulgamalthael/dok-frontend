@@ -7,17 +7,12 @@ const nextConfig: NextConfig = {
             {
                 protocol: 'https',
                 hostname: 'flagcdn.com',
-                pathname: '/**'
             },
             {
                 protocol: 'https',
                 hostname: 'img.dok.ua',
-                pathname: '/**'
             }
         ],
-    },
-    env: {
-        TRUST_PROXY: 'true',
     },
 };
 

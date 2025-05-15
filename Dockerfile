@@ -15,7 +15,6 @@ FROM node:18-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
-ENV TRUST_PROXY=true
 
 # 👉 Добавим ca-certificates
 RUN apk add --no-cache curl ca-certificates

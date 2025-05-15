@@ -2,12 +2,11 @@ version: '3.8'
 
 services:
   frontend:
-    build: .
+    build: ./frontend
     container_name: infinity-frontend
     restart: always
     environment:
       - NODE_ENV=production
-      - TRUST_PROXY=true
     ports:
       - "3000:3000"
 
@@ -17,10 +16,7 @@ services:
     restart: always
     ports:
       - "80:80"
-      - "443:443" # добавили HTTPS
     volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - ./nginx/certbot/conf:/etc/letsencrypt     # сертификаты
-      - ./nginx/certbot/www:/var/www/certbot      # верификация
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
     depends_on:
       - frontend
