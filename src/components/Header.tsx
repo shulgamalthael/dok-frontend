@@ -1,5 +1,4 @@
 import { Link } from "@/i18n/navigation";
-import Image from "next/image";
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
