@@ -4,6 +4,8 @@
 FROM node:18-alpine AS builder
 WORKDIR /app
 
+RUN apk add --no-cache curl ca-certificates
+
 COPY package*.json ./
 RUN npm install
 
