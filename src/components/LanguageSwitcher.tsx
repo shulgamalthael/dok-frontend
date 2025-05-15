@@ -3,6 +3,7 @@
 import { usePathname, useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { useState } from 'react';
+import Image from "next/image";
 
 const LANGUAGES = [
     { code: 'ua', name: 'Українська', flag: 'https://flagcdn.com/w40/ua.png' },
@@ -31,7 +32,7 @@ const LanguageSwitcher = () => {
                 onClick={() => setOpen(!open)}
                 className="inline-flex items-center gap-2 border px-3 py-1 rounded hover:bg-gray-100"
             >
-                <img src={currentLang.flag} alt={currentLang.name} className="h-[20px] w-[20px]" />
+                <Image src={currentLang.flag} alt={currentLang.name} height={20} width={20} />
                 <span>{currentLang.code.toUpperCase()}</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
