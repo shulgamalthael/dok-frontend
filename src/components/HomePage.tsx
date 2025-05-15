@@ -66,6 +66,18 @@ const HomePage = () => {
                         <Suspense fallback={<GridSkeletonCardsList />}>
                             <GridCardsList />
                         </Suspense>
+                        <Suspense fallback={<GridSkeletonCardsList />}>
+                            <GridCardsList />
+                        </Suspense>
+                        <Suspense fallback={<GridSkeletonCardsList />}>
+                            <GridCardsList />
+                        </Suspense>
+                        <Suspense fallback={<GridSkeletonCardsList />}>
+                            <GridCardsList />
+                        </Suspense>
+                        <Suspense fallback={<GridSkeletonCardsList />}>
+                            <GridCardsList />
+                        </Suspense>
                         <div className="flex mb-[20px]">
                             <button className="group flex justify-center mx-auto cursor-pointer text-[16px] border border-solid border-[#1a77d2] text-center rounded-[3px] w-[280px] h-[40px] text-[#1a77d2] leading-[1.25] hover:bg-[#1a77d2] hover:text-white">
                                 <div className="flex my-auto">
