@@ -16,6 +16,9 @@ const nextConfig: NextConfig = {
             }
         ],
     },
+    env: {
+        TRUST_PROXY: 'true',
+    },
 };
 
 const withNextIntl = createNextIntlPlugin();
