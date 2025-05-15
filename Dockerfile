@@ -17,7 +17,7 @@ WORKDIR /app
 ENV NODE_ENV=production
 
 # 👉 Добавим ca-certificates
-RUN apk add --no-cache ca-certificates
+RUN apk add --no-cache curl ca-certificates
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
