@@ -2,7 +2,6 @@
 
 import { usePathname, useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
-import Image from 'next/image';
 import { useState } from 'react';
 
 const LANGUAGES = [
@@ -32,7 +31,7 @@ const LanguageSwitcher = () => {
                 onClick={() => setOpen(!open)}
                 className="inline-flex items-center gap-2 border px-3 py-1 rounded hover:bg-gray-100"
             >
-                <Image src={currentLang.flag} alt={currentLang.name} width={20} height={20} />
+                <img src={currentLang.flag} alt={currentLang.name} className="h-[20px] w-[20px]" />
                 <span>{currentLang.code.toUpperCase()}</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -47,7 +46,7 @@ const LanguageSwitcher = () => {
                             onClick={() => changeLanguage(lang.code)}
                             className="flex items-center gap-2 px-4 py-2 w-full hover:bg-gray-100"
                         >
-                            <Image src={lang.flag} alt={lang.name} width={20} height={20} />
+                            <img src={lang.flag} alt={lang.name} className="h-[20px] w-[20px]" />
                             <span>{lang.name}</span>
                         </button>
                     ))}
