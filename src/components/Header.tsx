@@ -9,7 +9,7 @@ const Header = () => {
     return(
         <header className="flex flex-col bg-white">
             <div className="bg-[#fafafa] text-[#05172a]">
-                <div className="flex justify-between max-w-[1600px] mx-auto px-[62px] py-4">
+                <div className="flex justify-between max-w-[1600px] mx-auto px-[32px] py-2">
                     <nav className="my-auto">
                         <Link href="/about_us" className="text-[14px] p-2 leading-[20px] font-normalr:underline">
                             {t("about_us")}
@@ -45,7 +45,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="flex bg-white">
-                <div className="flex max-w-[1600px] w-[1600px] h-[100px] mx-auto px-[62px]">
+                <div className="flex max-w-[1600px] w-[1600px] h-[100px] mx-auto px-[32px]">
                     <div className="flex p-4">
                         <Link href="/" className="m-auto">
                             <Image src="/logo-full-original-ua.svg" alt="Logo" height={48} width={144} />
@@ -59,14 +59,14 @@ const Header = () => {
                             </div>
                         </Link>
                     </div>
-                    <div className="flex flex-col grow-[20] shrink-[2] max-w-[calc(100vw-332px)] my-auto">
+                    <div className="flex flex-col grow-[20] shrink-[2] max-w-[calc(100vw-332px)] p-4 my-auto">
                         <div className="flex w-full rounded-[8px] hover:shadow-[0_1px_3px_0_rgba(5,23,42,0.3),_0_4px_8px_3px_rgba(5,23,42,0.15)]">
                             <input className="h-[48px] w-full text-black placeholder:text-stone-400 border-r-[0] border border-solid border-[rgba(0,0,0,0.12)] gap-[8] text-13px pt-[12px] pr-[4px] pb-[12px] pl-[16px] rounded-tl-[8px] rounded-bl-[8px] cursor-pointer" placeholder="Яку запчастину шукаєте?" />
                             <div className="h-[48px] w-[48px] p-[12px] bg-[#1a77d2] rounded-tr-[8px] rounded-br-[8px] cursor-pointer border border-solid border-[rgba(0,0,0,0.12)]">
                                 <i className="icon-ic-search flex flex-col justify-center h-[24px] w-[24px] text-white text-[24px]" />
                             </div>
                         </div>
-                        <div className="max-h-[15px] text-[13px] overflow-y-clip">
+                        <div className="text-[13px] overflow-y-clip">
                             <span className="text-[#949494]">Часто шукають:</span>
                             <span className="text-[#1a77d2] max-h-[15px]">
                                 <Link href="/" className="underline ml-1">
@@ -91,25 +91,25 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="flex">
-                        <div className="h-[92px] max-w-[160px] p-4">
+                        <div className="h-[92px] max-w-[160px] p-4 m-auto">
                             <div className="flex flex-col py-[8px] px-[16px] gap-[4px] hover:bg-[rgba(26,119,210,0.08)] rounded-[8px] cursor-pointer">
                                 <i className="icon-ic-garage text-[#05172a] text-[24px] flex justify-center" />
                                 <div className="text-[#05172a] text-[12px] leading-[16px] font-normal text-ellipsis whitespace-nowrap overflow-hidden">Гараж</div>
                             </div>
                         </div>
-                        <div className="h-[92px] max-w-[160px] p-4">
+                        <div className="h-[92px] max-w-[160px] p-4 m-auto">
                             <div className="flex flex-col py-[8px] px-[16px] gap-[4px] hover:bg-[rgba(26,119,210,0.08)] rounded-[8px] cursor-pointer">
                                 <i className="icon-ic-heart-empty text-[#05172a] text-[24px] flex justify-center" />
                                 <div className="text-[#05172a] text-[12px] leading-[16px] font-normal text-ellipsis whitespace-nowrap overflow-hidden">Вибране</div>
                             </div>
                         </div>
-                        <div className="h-[92px] max-w-[160px] p-4">
+                        <div className="h-[92px] max-w-[160px] p-4 m-auto">
                             <div className="flex flex-col py-[8px] px-[16px] gap-[4px] hover:bg-[rgba(26,119,210,0.08)] rounded-[8px] cursor-pointer">
                                 <i className="icon-ic-person-outline text-[#05172a] text-[24px] flex justify-center" />
                                 <div className="text-[#05172a] text-[12px] leading-[16px] font-normal text-ellipsis whitespace-nowrap overflow-hidden">Кабінет</div>
                             </div>
                         </div>
-                        <div className="h-[92px] max-w-[160px] p-4">
+                        <div className="h-[92px] max-w-[160px] p-4 m-auto">
                             <div className="flex flex-col py-[8px] px-[16px] gap-[4px] hover:bg-[rgba(26,119,210,0.08)] rounded-[8px] cursor-pointer">
                                 <i className="icon-ic-shopping-cart-outline text-[#05172a] text-[24px] flex justify-center" />
                                 <div className="text-[#05172a] text-[12px] leading-[16px] font-normal text-ellipsis whitespace-nowrap overflow-hidden">8888 грн</div>
@@ -119,7 +119,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="bg-[#171718]">
-                <div className="max-w-[1600px] px-[62px] mx-auto">
+                <div className="max-w-[1600px] px-[32px] mx-auto">
                     <nav>
                         <ul className="flex justify-center relative">
                             <li className="hover:bg-[#464749]">
