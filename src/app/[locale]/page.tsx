@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type {Metadata} from "next";
+import {Link} from "@/i18n/navigation";
 
 export const metadata: Metadata = {
   title: "Infinity Suit | Home",
@@ -13,14 +14,14 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+        <div className="flex bg-[#1a77d2] h-[48px] relative rounded-[8px] my-auto mx-4 pr-4">
+          <Link href="/catalog/no-streaming" className="flex relative h-full w-full">
+            <div className="bg-[url(/icons/ic-catalog.svg)] bg-center bg-size-[24px] bg-no-repeat h-[48px] w-[48px]"></div>
+            <div className="text-white text-[16px] leading-[48px]">
+              Каталог без стрімінгу
+            </div>
+          </Link>
+        </div>
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
