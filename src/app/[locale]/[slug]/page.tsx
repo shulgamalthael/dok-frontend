@@ -1,5 +1,14 @@
 import {Link} from "@/i18n/navigation";
 import Image from "next/image";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Infinity Suit | Product",
+    description: "Infinity Suit Website | Product",
+    icons: {
+        icon: "/favicon.ico",
+    }
+};
 
 const Page = () => {
     return(

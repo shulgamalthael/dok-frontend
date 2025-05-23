@@ -16,8 +16,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: "DOK.UA",
-    description: "DOK.UA Website",
+    title: "Infinity Suit",
+    description: "Infinity Suit Website",
     icons: {
         icon: "/favicon.ico",
     }

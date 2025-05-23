@@ -3,6 +3,15 @@ import Head from "next/head";
 import GridSkeletonCardsList from "@/components/GridSkeletonCardsList";
 import GridCardsList from "@/components/GridCardsList";
 import Link from "next/link";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Infinity Suit | Catalog",
+    description: "Infinity Suit Website | Catalog",
+    icons: {
+        icon: "/favicon.ico",
+    }
+};
 
 const Page = () => {
     return(
